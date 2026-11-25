@@ -1,0 +1,29 @@
+Code commit: 34aeedccb344fd1d1b2e4a88d5c72b7e9e73c150
+Python: 3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
+Command: python -m unittest discover -s tests -t . -v
+
+C:\Users\user\Desktop\5 СЕМЕСТР\МТП - ЦЫМЛОВ\mtp-lab6-v2\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_greeting (tests.test_app.AppTests.test_greeting) ... ok
+test_greeting_escapes_html (tests.test_app.AppTests.test_greeting_escapes_html) ... ok
+test_home_and_assets (tests.test_app.AppTests.test_home_and_assets) ... ok
+test_http_message_broadcast (tests.test_app.AppTests.test_http_message_broadcast) ... ok
+test_insert_and_get (tests.test_app.AppTests.test_insert_and_get) ... ok
+test_invalid_greeting (tests.test_app.AppTests.test_invalid_greeting) ... ok
+test_invalid_message (tests.test_app.AppTests.test_invalid_message) ... ok
+test_json_info (tests.test_app.AppTests.test_json_info) ... ok
+test_not_found_and_limit (tests.test_app.AppTests.test_not_found_and_limit) ... ok
+test_persistence_new_application (tests.test_app.AppTests.test_persistence_new_application) ... ok
+test_recent_messages_order (tests.test_app.AppTests.test_recent_messages_order) ... ok
+test_reconnect_history (tests.test_app.AppTests.test_reconnect_history) ... ok
+test_sql_injection_is_plain_text (tests.test_app.AppTests.test_sql_injection_is_plain_text) ... ok
+test_table_and_escaping (tests.test_app.AppTests.test_table_and_escaping) ... ok
+test_websocket_two_clients (tests.test_app.AppTests.test_websocket_two_clients) ... ok
+test_websocket_validation_and_recovery (tests.test_app.AppTests.test_websocket_validation_and_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.958s
+
+OK
+
+Exit code: 0
