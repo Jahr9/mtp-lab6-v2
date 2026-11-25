@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block content %}
+<p class="eyebrow">Общая комната</p><h1>Разговор в реальном времени.</h1>
+<p class="lead">Имя видно всем участникам. История сохраняется после перезапуска сервера.</p>
+<section class="card"><div class="row"><label for="author">Ваше имя</label><input id="author" maxlength="40" value="Илья"><span id="status" role="status">Подключение…</span><button id="reconnect" type="button">Переподключить</button></div>
+<div id="messages" role="log" aria-live="polite"><p id="empty" class="muted">Сообщений пока нет.</p></div>
+<form id="chat-form"><label for="text">Сообщение</label><div class="row"><input id="text" maxlength="1000" required placeholder="Напишите сообщение…"><button id="send" disabled>Отправить</button></div></form>
+<p id="error" class="error" role="alert"></p></section>
+<script src="/static/chat.js" defer></script>{% endblock %}

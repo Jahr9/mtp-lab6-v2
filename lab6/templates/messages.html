@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block content %}
+<p class="eyebrow">История переписки</p><h1>Сообщения сохраняются.</h1>
+<p class="lead">Последние 100 сообщений из базы. Время указано в UTC.</p>
+<div class="card table-wrap"><table><thead><tr><th>ID</th><th>Автор</th><th>Сообщение</th><th>Время</th></tr></thead><tbody>
+{% for message in messages %}<tr><td>{{ message.id }}</td><td>{{ message.name }}</td><td class="message">{{ message.text }}</td><td>{{ message.created_at }}</td></tr>
+{% else %}<tr><td colspan="4">Сообщений пока нет. Отправьте первое в чате.</td></tr>{% endfor %}
+</tbody></table></div><p><a class="button" href="/chat">Открыть чат</a> <a href="/messages">Обновить таблицу</a></p>
+{% endblock %}
